@@ -29,18 +29,20 @@ public class Main {
             risposta = input.nextLine();
             System.out.println("Prossimo numero.");
             int num = input.nextInt();
-            input.nextLine(); // Consuma newline dopo nextInt()
+            
             dimensione++;
             int[] nuovoMioArray = Arrays.copyOf(mioArray, dimensione);
             nuovoMioArray[dimensione-1] = num;
             mioArray = nuovoMioArray;
 
-
         }
         
         Ciclabile ciclo = new Ciclabile(mioArray);
         
-        ciclo.getElementoSuccessivo();
+        System.out.println(ciclo.getElementoSuccessivo());
+        System.out.println(ciclo.getElementoSuccessivo());
+        System.out.println(ciclo.getElementoSuccessivo());
+        
         ciclo.hasAncoraElementi();
 
         input.close();
